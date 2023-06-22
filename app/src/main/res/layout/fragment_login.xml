@@ -23,7 +23,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="E-mail"
+            android:text="@string/txt_email_login_fragment"
             android:textColor="@color/white"/>
         
         <EditText
@@ -40,7 +40,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Password"
+            android:text="@string/txt_password_login_fragment"
             android:layout_marginTop="16dp"
             android:textColor="@color/white"/>
 

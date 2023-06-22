@@ -66,7 +66,7 @@ class LoginFragment : Fragment() {
         auth.signInWithEmailAndPassword(email, password)
             .addOnCompleteListener(requireActivity()) { task ->
                 if (task.isSuccessful) {
-                    findNavController().navigate(R.id.action_loginFragment_to_homeFragment)
+                    findNavController().navigate(R.id.action_global_homeFragment2)
                 } else {
                     binding.loginProgressBar.isVisible = false
                     Toast.makeText(requireContext(), "Erro ao fazer login!!!", Toast.LENGTH_SHORT).show()

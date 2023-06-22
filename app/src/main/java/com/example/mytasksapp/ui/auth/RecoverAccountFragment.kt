@@ -9,9 +9,7 @@ import android.widget.Toast
 import androidx.core.view.isVisible
 import androidx.navigation.fragment.findNavController
 import com.example.mytasksapp.R
-import com.example.mytasksapp.databinding.FragmentLoginBinding
 import com.example.mytasksapp.databinding.FragmentRecoverAccountBinding
-import com.example.mytasksapp.databinding.FragmentRegisterBinding
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
