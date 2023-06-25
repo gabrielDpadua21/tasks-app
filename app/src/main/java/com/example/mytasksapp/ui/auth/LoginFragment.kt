@@ -1,6 +1,7 @@
 package com.example.mytasksapp.ui.auth
 
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -69,7 +70,9 @@ class LoginFragment : Fragment() {
                     findNavController().navigate(R.id.action_global_homeFragment2)
                 } else {
                     binding.loginProgressBar.isVisible = false
-                    Toast.makeText(requireContext(), "Erro ao fazer login!!!", Toast.LENGTH_SHORT).show()
+                    Log.i("INFOTESTE", "LOGIN ERROR: ${task.exception?.message}")
+                    val message = if (task.exception?.message !== null) task.exception?.message else "Erro ao fazer login!!!"
+                    Toast.makeText(requireContext(), message, Toast.LENGTH_SHORT).show()
                 }
             }
     }

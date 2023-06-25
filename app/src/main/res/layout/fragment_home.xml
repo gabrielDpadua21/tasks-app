@@ -31,7 +31,9 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:tabIndicatorColor="@color/white"
                 app:tabTextAppearance="@style/CustomTabStyle"
-                app:tabTextColor="@color/white" />
+                app:tabTextColor="@color/white"
+                app:rippleColor="@color/white"
+                />
 
             <ImageButton
                 android:id="@+id/ibtn_logout"
@@ -42,7 +44,9 @@
                 android:src="@drawable/ico_logout"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                app:rippleColor="@color/white"
+                />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </com.google.android.material.appbar.AppBarLayout>

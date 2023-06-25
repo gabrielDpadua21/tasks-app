@@ -52,7 +52,7 @@ class RegisterFragment : Fragment() {
 
         if (email.isEmpty() || password.isEmpty() || !password.equals(confirmPassword)) {
             showMessage(email, password, confirmPassword)
-            Toast.makeText(requireContext(), "Error ao cadastrar usuário", Toast.LENGTH_SHORT).show()
+            Toast.makeText(requireContext(), "Error to create user!!!", Toast.LENGTH_SHORT).show()
             return
         }
 
@@ -62,13 +62,16 @@ class RegisterFragment : Fragment() {
 
     private fun showMessage(email: String, password: String, confirmePassword: String) {
         if(email.isEmpty()) {
-            Toast.makeText(requireContext(), "E-email inválido!!!", Toast.LENGTH_SHORT).show()
+            Toast.makeText(requireContext(), "Invalid E-mail!!!", Toast.LENGTH_SHORT).show()
+            return
         }
         if (password.isEmpty()) {
-            Toast.makeText(requireContext(), "Senha inválida", Toast.LENGTH_SHORT).show()
+            Toast.makeText(requireContext(), "Invalid password!!!", Toast.LENGTH_SHORT).show()
+            return
         }
         if (!password.equals(confirmePassword)) {
-            Toast.makeText(requireContext(), "As senhas devem ser iguais", Toast.LENGTH_SHORT).show()
+            Toast.makeText(requireContext(), "The password should be the same!!!", Toast.LENGTH_SHORT).show()
+            return
         }
     }
 
@@ -79,7 +82,8 @@ class RegisterFragment : Fragment() {
                     findNavController().navigate(R.id.action_global_homeFragment2)
                 } else {
                     binding.progressBarRegister.isVisible = false
-                    Toast.makeText(requireContext(), "Erro ao cadastras usuário", Toast.LENGTH_SHORT).show()
+                    val message = if (task.exception?.message !== null) task.exception?.message else "Error on create user!!!"
+                    Toast.makeText(requireContext(), message, Toast.LENGTH_SHORT).show()
                 }
             }
     }

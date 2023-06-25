@@ -61,7 +61,8 @@ class RecoverAccountFragment : Fragment() {
                     findNavController().navigate(R.id.action_recoverAccountFragment_to_loginFragment)
                 } else {
                     binding.progressBarRecover.isVisible = false
-                    Toast.makeText(requireContext(), "Erro ao testar enviar e-mail", Toast.LENGTH_SHORT).show()
+                    val message = if (task.exception?.message !== null) task.exception?.message else "Error to send e-mail recover!!!"
+                    Toast.makeText(requireContext(), message, Toast.LENGTH_SHORT).show()
                 }
             }
     }

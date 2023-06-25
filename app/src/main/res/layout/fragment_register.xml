@@ -48,7 +48,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="E-mail"
+                android:text="@string/txt_email_register_fragment"
                 android:textColor="@color/white" />
 
             <EditText
@@ -66,7 +66,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:text="Password"
+                android:text="@string/txt_password_register_fragment"
                 android:textColor="@color/white"
                 />
 
@@ -85,7 +85,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:text="Confirm Password"
+                android:text="@string/txt_confirmpassword_register_fragment"
                 android:textColor="@color/white" />
 
             <EditText
@@ -117,7 +117,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:paddingVertical="8dp"
-                android:text="Have a account? Login"
+                android:text="@string/txt_login_register_fragment"
                 android:textAlignment="center"
                 android:textColor="@color/white"
                 android:textSize="14dp" />
