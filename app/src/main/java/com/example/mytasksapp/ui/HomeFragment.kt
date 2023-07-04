@@ -8,7 +8,6 @@ import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.example.mytasksapp.R
 import com.example.mytasksapp.databinding.FragmentHomeBinding
-import com.example.mytasksapp.databinding.FragmentRecoverAccountBinding
 import com.example.mytasksapp.ui.adapter.ViewPageAdapter
 import com.google.android.material.tabs.TabLayoutMediator
 import com.google.firebase.auth.FirebaseAuth
